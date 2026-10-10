@@ -88,3 +88,62 @@ h1 em, h2 em { color: var(--coral); font-style: normal; }
 .feature-image img { display: block; height: auto; min-height: 0; object-fit: contain; }
 .gallery-card, .gallery-card-large, .gallery-card-small { min-height: 0; height: auto; align-self: start; }
 .gallery-card img { display: block; height: auto; object-fit: contain; }
+
+.site-header { padding-block: 18px; }
+.hero { min-height: 560px; padding-block: 46px 52px; }
+.hero-copy { animation: rise-in .55s ease-out both; }
+.hero-art { min-height: 440px; animation: rise-in .7s .08s ease-out both; }
+.ticker { padding-block: 15px; }
+.section-grid { gap: 8vw; padding-block: 82px; }
+.step { padding-block: 21px; }
+.feature-image { padding-block: 42px; }
+.feature-copy { padding-block: 42px; }
+.inspiration { padding-block: 86px 92px; }
+.inspiration-heading { margin-bottom: 32px; }
+.gallery-grid { gap: 14px; }
+.gallery-label { padding: 16px; }
+.stories { padding-block: 84px; }
+.stories-heading { margin-bottom: 32px; }
+.testimonial { min-height: 260px; padding: 23px; }
+.testimonial > p { margin-block: 14px; }
+.final-cta { padding-block: 82px 88px; }
+.site-footer { padding-block: 20px; }
+
+.scroll-reveal { opacity: 0; transform: translateY(18px); transition: opacity .5s ease, transform .5s ease; }
+.scroll-reveal.is-visible { opacity: 1; transform: translateY(0); }
+.gallery-card:nth-child(2), .testimonial:nth-child(2) { transition-delay: 90ms; }
+.gallery-card:nth-child(3), .testimonial:nth-child(3) { transition-delay: 180ms; }
+@keyframes rise-in { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+
+@media (max-width: 800px) {
+  .hero { min-height: 0; padding-block: 52px 22px; }
+  .hero-art { min-height: 370px; }
+  .section-grid { padding-block: 62px; }
+  .section-intro { margin-bottom: 32px; }
+  .feature-image { min-height: 0; padding-block: 30px; }
+  .feature-image img { min-height: 0; }
+  .feature-copy { padding-block: 46px; }
+  .inspiration { padding-block: 62px; }
+  .stories { padding-block: 62px; }
+  .testimonial { min-height: 220px; }
+  .final-cta { padding-block: 66px; }
+}
+
+@media (max-width: 480px) {
+  .hero { padding-block: 42px 18px; }
+  .hero-art { min-height: 330px; margin-top: 28px; }
+  .section-grid { padding-block: 52px; }
+  .feature-copy { padding-block: 38px; }
+  .inspiration, .stories { padding-block: 52px; }
+  .gallery-grid { gap: 10px; }
+  .gallery-label { padding: 12px; }
+  .gallery-label strong { font-size: 19px; }
+  .testimonial { min-height: 200px; padding: 20px; }
+  .final-cta { padding-block: 56px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .hero-copy, .hero-art { animation: none; }
+  .scroll-reveal { opacity: 1; transform: none; transition: none; }
+}

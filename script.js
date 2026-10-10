@@ -32,3 +32,22 @@ document.addEventListener('click', (event) => {
     console.error('No se pudo enviar la notificación del clic:', error);
   });
 });
+
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if ('IntersectionObserver' in window && !prefersReducedMotion) {
+  const revealTargets = document.querySelectorAll(
+    '.section-grid, .feature-band, .gallery-card, .stories-heading, .testimonial, .final-cta'
+  );
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-visible');
+      observer.unobserve(entry.target);
+    });
+  }, { threshold: 0.12 });
+
+  revealTargets.forEach((target) => {
+    target.classList.add('scroll-reveal');
+    revealObserver.observe(target);
+  });
+}
