@@ -67,6 +67,13 @@ h1 em, h2 em { color: var(--coral); font-style: normal; }
 .gallery-label { position: absolute; right: 0; bottom: 0; left: 0; display: flex; flex-direction: column; padding: 21px; color: white; background: linear-gradient(transparent, rgba(20, 20, 17, .84)); }
 .gallery-label strong { font: 600 23px var(--display); }
 .gallery-label small { margin-top: 5px; color: #ece9dc; font-size: 11px; }
+.tiktok-section { display: grid; grid-template-columns: .8fr 1.2fr; align-items: center; gap: 8vw; padding: 92px 10vw; background: var(--ink); color: var(--cream); }
+.tiktok-copy { max-width: 390px; }
+.tiktok-copy h2 { margin: 21px 0; font: 600 clamp(36px, 4.2vw, 58px)/1 var(--display); letter-spacing: -.06em; }
+.tiktok-copy h2 em { color: var(--coral); font-style: normal; }
+.tiktok-copy > p:not(.eyebrow) { margin-bottom: 28px; color: #d1cec2; line-height: 1.6; }
+.tiktok-embed-shell { display: flex; min-width: 0; justify-content: center; }
+.tiktok-embed { width: 100%; max-width: 780px; min-width: 288px; margin: 0; }
 @media (max-width: 800px) {
   .inspiration { padding: 80px 7vw; }
   .inspiration-heading { display: block; margin-bottom: 30px; }
@@ -74,6 +81,8 @@ h1 em, h2 em { color: var(--coral); font-style: normal; }
   .gallery-grid { grid-template-columns: 1fr 1fr; }
   .gallery-card-large { grid-row: span 2; min-height: 470px; }
   .gallery-card, .gallery-card-small { min-height: 225px; margin-top: 0; }
+  .tiktok-section { grid-template-columns: 1fr; gap: 34px; padding: 62px 7vw; }
+  .tiktok-copy { max-width: 520px; }
 }
 
 .hero-image-frame { height: auto; aspect-ratio: 1725 / 978; }
