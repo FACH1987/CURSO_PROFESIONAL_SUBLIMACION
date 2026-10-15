@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fach1987.github.io/proyecto-hotmart/sitemap.xml
+Sitemap: https://fach1987.github.io/CURSO_PROFESIONAL_SUBLIMACION/sitemap.xml
