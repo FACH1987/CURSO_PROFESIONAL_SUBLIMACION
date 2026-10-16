@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fach1987.github.io/CURSO_PROFESIONAL_SUBLIMACION/sitemap.xml
+Sitemap: https://fach1987.github.io/CURSO_SUBLIMACION_PROFESIONAL/sitemap.xml
