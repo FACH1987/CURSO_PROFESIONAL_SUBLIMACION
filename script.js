@@ -9,10 +9,15 @@ const emailNotification = {
 menuToggle?.addEventListener('click', () => {
   const isOpen = nav.classList.toggle('nav-open');
   menuToggle.setAttribute('aria-expanded', String(isOpen));
+  menuToggle.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
 });
 
 nav?.querySelectorAll('a').forEach((link) => {
-  link.addEventListener('click', () => nav.classList.remove('nav-open'));
+  link.addEventListener('click', () => {
+    nav.classList.remove('nav-open');
+    menuToggle?.setAttribute('aria-expanded', 'false');
+    menuToggle?.setAttribute('aria-label', 'Abrir menú');
+  });
 });
 
 document.addEventListener('click', (event) => {
