@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=2" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -35,7 +35,7 @@
     </script>
   </head>
   <body>
-    <div class="announcement">CUPOS ABIERTOS · Curso online de sublimación creativa <span>→</span></div>
+    <div class="announcement">Cupos abiertos · Curso online de sublimación creativa</div>
 
     <header class="site-header">
       <a class="brand" href="index.html" aria-label="Curso Sublimación Profesional, inicio">
@@ -56,11 +56,11 @@
       <section class="hero" id="inicio">
         <div class="hero-copy">
           <p class="eyebrow"><span class="eyebrow-line"></span> CURSO ONLINE DE SUBLIMACIÓN</p>
-          <h1>Aprende sublimación y <em>crea productos para vender.</em></h1>
+          <h1>Aprende sublimación <em>y crea productos para vender.</em></h1>
           <p class="hero-text">Aprende desde cero a crear productos personalizados con sublimación, diseña tu colección y descubre cómo empezar a vender desde casa.</p>
           <div class="hero-actions">
-            <a class="button button-primary course-cta featured-cta" href="https://go.hotmart.com/J102460964H?ap=984d" target="_blank" rel="noopener">¡Quiero crear y vender! <span>↗</span></a>
-            <a class="text-link" href="metodo.html">Descubre cómo funciona <span>→</span></a>
+            <a class="button button-primary course-cta featured-cta" href="https://go.hotmart.com/J102460964H?ap=984d" target="_blank" rel="noopener">¡Quiero crear y vender! <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="metodo.html">Descubre cómo funciona <span aria-hidden="true">→</span></a>
           </div>
           <div class="social-proof">
             <div class="avatar-stack" aria-hidden="true">
@@ -69,20 +69,42 @@
             <p><strong>+2.500 creadoras</strong><br />ya están creando algo propio</p>
           </div>
         </div>
-        <div class="hero-art" aria-label="Productos de sublimación coloridos">
-          <div class="sun-shape"><img src="IDEAS%20REALIDAD%201.jpg" alt="Emprendedora diseñando productos personalizados para su marca" /></div>
-          <div class="scribble scribble-top">create<br />your own</div>
-          <div class="product-card product-card-mug"><span>☕</span><strong>Tu diseño</strong><small>en todas partes</small></div>
-          <div class="product-card product-card-shirt"><span>✺</span><strong>Hecho por ti</strong><small>vendido por ti</small></div>
-          <div class="sparkle sparkle-one">✦</div><div class="sparkle sparkle-two">✦</div>
+        <div class="hero-art">
+          <div class="hero-photo">
+            <img src="IDEAS%20REALIDAD%201.jpg" width="735" height="919" fetchpriority="high" alt="Emprendedora con productos personalizados de su marca: una taza, un termo y una gorra" />
+          </div>
+          <span class="hero-sparkle" aria-hidden="true">✦</span>
         </div>
       </section>
 
-      <nav class="view-selector" aria-label="Explora el curso">
-        <a class="view-card view-card-lime" href="metodo.html"><span>01</span><strong>El método</strong><small>Conoce la ruta de aprendizaje</small><i>→</i></a>
-        <a class="view-card view-card-pink" href="incluye.html"><span>02</span><strong>Qué incluye</strong><small>Descubre todos los recursos</small><i>→</i></a>
-        <a class="view-card view-card-orange" href="inspiracion.html"><span>03</span><strong>Inspiración</strong><small>Explora lo que puedes crear</small><i>→</i></a>
-        <a class="view-card view-card-cream" href="historias.html"><span>04</span><strong>Historias</strong><small>Conoce a otras creadoras</small><i>→</i></a>
+      <nav class="course-sections" aria-labelledby="course-sections-title">
+        <h2 id="course-sections-title">Explora el curso</h2>
+        <div class="view-selector">
+          <a class="view-card view-card-lime" href="metodo.html">
+            <span class="view-card-icon" aria-hidden="true">✎</span>
+            <strong>El método</strong>
+            <small>Conoce la ruta de aprendizaje</small>
+            <span class="view-card-arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="view-card view-card-pink" href="incluye.html">
+            <span class="view-card-icon" aria-hidden="true">✓</span>
+            <strong>Qué incluye</strong>
+            <small>Descubre todos los recursos</small>
+            <span class="view-card-arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="view-card view-card-orange" href="inspiracion.html">
+            <span class="view-card-icon" aria-hidden="true">✦</span>
+            <strong>Inspiración</strong>
+            <small>Explora lo que puedes crear</small>
+            <span class="view-card-arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="view-card view-card-cream" href="historias.html">
+            <span class="view-card-icon" aria-hidden="true">“</span>
+            <strong>Historias</strong>
+            <small>Conoce a otras creadoras</small>
+            <span class="view-card-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
       </nav>
     </main>
 
